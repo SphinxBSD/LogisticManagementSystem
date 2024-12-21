@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Activation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            width: 500px;
+        }
+
+        .logo {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #e85d04ff;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #023e8aff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #326ebd;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Credenciales de Usuario</h1>
+        <h2>Su usuario fue creado exitosamente!</h2>
+        <p>Nombre de usuario: <strong th:text="${username}"></strong></p>
+        <p>Contraseña: <strong th:text="${password}"></strong></p>
+        <a href="http://localhost:4200/auth/login" class="button">Ir a la pagina</a>
+    </div>
+</body>
+</html>
